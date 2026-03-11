@@ -1,14 +1,21 @@
-# --- STEP 1: THE MAP ---
-# This is an 'Adjacency List'. Each city points to its neighbors and the distance.
+# --- SRIKAKULAM DISTRICT LOGISTICS PROJECT ---
+# I started by mapping the towns and distances in my home district.
+# Using a dictionary to represent the graph (Adjacency List).
 
-graph = {
-    'Warehouse': {'Point_A': 5, 'Point_B': 2},
-    'Point_A': {'Warehouse': 5, 'Point_C': 4, 'Point_D': 2},
-    'Point_B': {'Warehouse': 2, 'Point_D': 7},
-    'Point_C': {'Point_A': 4, 'Customer': 3},
-    'Point_D': {'Point_A': 2, 'Point_B': 7, 'Customer': 1},
-    'Customer': {'Point_C': 3, 'Point_D': 1}
+road_data = {
+    'Srikakulam_City': {'Narasannapeta': 25, 'Amadalavalasa': 15},
+    'Amadalavalasa': {'Srikakulam_City': 15, 'Rajam': 35},
+    'Narasannapeta': {'Srikakulam_City': 25, 'Tekkali': 30, 'Kotabommali': 20},
+    'Tekkali': {'Narasannapeta': 30, 'Palasa': 40, 'Pathapatnam': 25},
+    'Palasa': {'Tekkali': 40, 'Ichchapuram': 35, 'Customer_Point': 10},
+    'Kotabommali': {'Narasannapeta': 20, 'Palasa': 45},
+    'Rajam': {'Amadalavalasa': 35, 'Ponduru': 20},
+    'Ponduru': {'Rajam': 20}, 
+    'Pathapatnam': {'Tekkali': 25},
+    'Ichchapuram': {'Palasa': 35},
+    'Customer_Point': {'Palasa': 10}
 }
 
-print("--- Logistics System: Initialized ---")
-print("Available routes from Warehouse:", graph['Warehouse'])
+print("--- LOGISTICS OPTIMIZER (Initial Setup) ---")
+print("Successfully mapped", len(road_data), "local towns.")
+print("Next step: Implement Dijkstra logic for shortest path.")
