@@ -1,12 +1,9 @@
 # Srikakulam Route Optimizer
 
-### Project Overview
-This is a Python-based project I am developing to solve delivery route problems in the Srikakulam district. It aims to use **Dijkstra's Algorithm** to find the most efficient paths between local towns.
+### Description
+A Python-based logistics tool that uses Dijkstra's Algorithm for the Srikakulam district.
 
-### Current Features
-* **Road Network Mapping:** 11 major towns in Srikakulam are mapped with real-world distance estimates.
-* **Data Structure:** Implemented using a Python dictionary (Adjacency List).
-
-### Future Updates
-* Add Dijkstra's Algorithm logic for shortest path calculation.
-* Add a fuel cost estimator for logistics planning.
+### Status
+- [x] Mapped Srikakulam road network.
+- [x] Implemented Dijkstra Shortest Path logic.
+- [ ] Add Fuel Cost Calculator and User Input Interface.
